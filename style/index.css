@@ -1,0 +1,243 @@
+.about-us{
+    padding: 60px 0px ;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    margin: 0px 95px;
+}
+.clients .container{
+    width: 90%;
+    margin: auto;
+    margin: 0px 95px;
+}
+.text-center h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.h2-header::after{
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    background-color: rgb(57, 134, 57);
+    width: 50px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    
+}
+.about-info{
+    padding: 20px 20px 20px 0px;
+}
+.about-info-2{
+    padding: 20px;
+    padding-left: 20px;
+}
+.img-info{
+    border-radius: 12px;
+}
+.about-info-2 ul{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.about-info-2 li{
+    margin-bottom: .6rem;
+}
+.about-info-2 svg{
+    color: green;
+    /* background-color: green; */
+}
+.animated-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+    background: #008374;
+    position: relative;
+}
+
+.animated-btn::before, .animated-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgba(0, 131, 116, 0.7);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+.animated-btn::after {
+    background: rgba(0, 131, 116, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+.img-info-2 .header{
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+}
+@keyframes ripple-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 85%;
+    }
+
+}
+.clients{
+    padding: 40px 0px ;
+}
+.clien-slider img{
+    transition: .3s;
+}
+.clien-slider img:hover{
+    transform: scale(1.15 , 1.15);
+}
+.clien-slider{
+    padding: 10px 0px;
+}
+.stats-counter{
+    padding: 40px 0px ;
+}
+.stat-one {
+    gap: 1rem;
+    align-items: center;
+    
+}
+.stat-two{
+    gap: 1rem;
+    align-items: center;
+}
+.stat-three{
+    gap: 1rem;
+    align-items: center;
+
+}
+.stats-counter h1{
+    color: #008374;
+}
+.call-to-action{
+    padding: 60px 0px ;
+}
+
+.call-info {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photo_5814304040316681989_y.jpg) center center;
+    background-size: cover;
+    padding: 100px 60px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.call-to-action{
+    .animated-btn{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        line-height: 80px;
+        display: inline-block;
+        text-align: center;
+        background: #008374;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .animated-btn::before, .animated-btn::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        background: rgba(0, 131, 116, 0.7);
+        animation: ripple-1 2s infinite ease-in-out;
+        z-index: 1;
+    }
+    
+    .animated-btn::after {
+        background: rgba(0, 131, 116, 0.6);
+        animation: ripple-2 2s infinite ease-in-out;
+        animation-delay: 0.5s;
+    }
+    
+    @keyframes ripple-1 {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes ripple-2 {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: scale(1.7);
+            opacity: 0;
+        }
+    }
+}
+.call-to-action p{
+    color: white;
+}
+.call-to-action h3{
+    color: white;
+}
+.cta-btn{
+
+    color: white;
+    text-decoration: none;
+    padding: 12px 48px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+}
+.cta-btn:hover{
+    background-color: #008374;
+    border: transparent;
+    color: #fff;
+}
+.call-info{
+    text-align: center;
+}
