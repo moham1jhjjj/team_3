@@ -286,6 +286,22 @@
     text-align: left;
     line-height: 20px;
 }
+hr{
+    width: 5%;
+    margin-left: 700px;
+    margin-top: -20px;
+    border: 3px solid green ;
+}
+ h5:hover{
+    color:  rgb(71, 114, 71);
+}
+.contant img:hover{
+    width: 105%;
+}
+
+.icons a i:hover {
+    color: rgb(71, 114, 71);
+}
 
 @media screen and (min-width:992px){
     .plane{
