@@ -241,3 +241,54 @@
 .call-info{
     text-align: center;
 }
+
+.pricing{
+    background-color: #f6f6f6;
+    padding: 60px 0px ;
+    text-align: center;
+}
+.pricing h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.pricing h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    background-color: #008374;
+    width: 50px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+.pricing-item{
+    background-color: #fff;
+    padding: 60px 40px;
+    box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+.plane{
+    border: #008374 3px solid;
+    z-index: 3;
+}
+.pricing ul{
+    padding: 20px 0;
+    list-style: none;
+    color: #6c757d;
+    text-align: left;
+    line-height: 20px;
+}
+
+@media screen and (min-width:992px){
+    .plane{
+        transform: scale(1.15);
+    }
+}
