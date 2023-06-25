@@ -308,3 +308,106 @@ hr{
         transform: scale(1.15);
     }
 }
+
+    /* services--section --start*/
+
+    .container .head-services h2::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 5rem;
+        height: 3px;
+        background: #008374;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+     }
+    
+      /* services--icons */
+     .items .card .card-body .fas::after{
+        position: absolute;
+        content: "";
+        height: 2.5rem;
+        width: 2.5rem;
+        background: gray;
+        border-radius: 50%;
+        z-index: 1;
+        top: 2rem;
+        left: 3rem;
+        opacity: .3;
+        transition: 0.3s;
+    }
+    .card .card-body .fas:hover::after{
+        opacity: 1;
+    }
+     .items .card .card-body h5::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 8rem;
+        height: 3px;
+        background: #008374;
+        top: 1.7rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .2;
+    }
+    .card .card-body h5:hover::after{
+        opacity: 1;
+    }
+    
+           /* services---end */
+
+   /* testimonails-section-start */
+
+.testimonaials .head-testimonails h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5rem;
+    height: 3px;
+    background: #008374;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+ }
+ .testimonaials .container{
+    width: 80%;
+    margin: auto;
+ }
+ .container .test-items .card{
+    width: 23rem;
+    
+}
+.card .potifio .potifilio-left img{
+    border-radius: 50%;
+}
+
+
+/* testimonaials-section-end */
+
+
+@media screen and (max-width:991px) and (min-width:500px){
+    .our-services .container .items{
+     flex-direction: column;
+     align-items: center;
+   }
+   
+}
+@media screen and (max-width:1070px){
+   .testimonaials .container{
+       width: 100%;
+   }
+   .container .test-items .card{
+       width: 100%;
+   }
+
+}
+
+        
+
