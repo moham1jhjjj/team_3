@@ -988,7 +988,6 @@ header span {
 .abuot {
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
     margin-top: 20px;
 }
 
@@ -998,15 +997,13 @@ header span {
 
 
 .abuot-text {
-    margin-left: 200px;
-    padding-right: 20px;
+    
     margin-top: 35px;
 }
 
 .ff {
-    width: 66%;
     margin-top: 30px;
-    margin-right: 50px;
+    
 
 }
 
@@ -1018,13 +1015,28 @@ header span {
     color: rgb(88, 88, 88);
 
 }
+.main .card img {
+    transition: 5555s ease;
+}
 
 .btn-group:hover {
     border: none;
     outline: none;
     color: rgb(21, 121, 87);
 }
-
+@media screen and (min-width:1280px) {
+    .nav-kik{
+        display: none;
+    }
+}
+@media  screen and (max-width:1280px) {
+    .nav-kik{
+        display: static;
+    }
+    .navbar{
+        display: none;
+    }
+}
 body {
     background-color: #fff;
 }
